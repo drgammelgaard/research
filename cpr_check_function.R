@@ -15,6 +15,3 @@ cpr_check<-function(x){
   result<-ifelse((p1*4+p2*3+p3*2+p4*7+p5*6+p6*5+p7*4+p8*3+p9*2+p10) %% 11 == 0,"valid","invalid")
   return(result)
 }
-
-#test
-cpr_check("121090-1899")
