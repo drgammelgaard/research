@@ -9,5 +9,7 @@ For thet start I've uploaded three commands:
 - age_calc_function.R
 - cpr_check_function.R
 - cpr_sex_function.R
+- date_convert_function.R
+- dob_extract_cpr_function.R
 
 All of these commands are written to work with the Danish Central Person Registry (CPR) numbers of the format ddmmyy-xxxx or ddmmyyxxxx.
