@@ -3,6 +3,8 @@ dob_extract_cpr<-function(cpr)
 ## Build upon data from this document: https://cpr.dk/media/167692/personnummeret%20i%20cpr.pdf
 ## example vector: fsd<-c("010190-2000", "010115-4000", "010189-6000","010189-3000","010150-6000","010150-4000")
   {
+  if (any(substr(cpr,7,7)%in%c(0:9))){stop("Input format should be ddmmyy-xxxx")}
+  else {
   dobs<-c()
   
   a00<-as.numeric(c(0:99))
@@ -46,4 +48,5 @@ dob_extract_cpr<-function(cpr)
   }
   
   return(dobs)
+}
 }
