@@ -3,7 +3,7 @@ dob_extract_cpr<-function(cpr)
 ## Build upon data from this document: https://cpr.dk/media/167692/personnummeret%20i%20cpr.pdf
 ## example vector: fsd<-c("010190-2000", "010115-4000", "010189-6000","010189-3000","010150-6000","010150-4000")
   {
-  if (any(substr(cpr,7,7)%in%c(0:9))){stop("Input format should be ddmmyy-xxxx")}
+  if (any(substr(cpr,7,7)%in%c(0:9))){stop("Input format should be ddmmyy-xxxx")} # test if input is ddmmyyxxxx
   else {
   dobs<-c()
   
@@ -41,7 +41,7 @@ dob_extract_cpr<-function(cpr)
     {
     dob<-as.Date(format(birth, format="18%y%m%d"), format="%Y%m%d")
     }
-  else {print("Input contains data in wrong format")
+  else {print("Input contains data in wrong format") # test if position 5,6 or 8 contains letters as is the case for temporary cpr-numbers
     }
   dobs<-append(dobs,dob)
   
