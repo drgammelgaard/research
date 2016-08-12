@@ -12,4 +12,4 @@ For thet start I've uploaded three commands:
 - date_convert_function.R
 - dob_extract_cpr_function.R
 
-All of these commands are written to work with the Danish Central Person Registry (CPR) numbers of the format ddmmyy-xxxx or ddmmyyxxxx.
+All of these commands are written to work with the Danish Central Person Registry (CPR) numbers of the format ddmmyy-xxxx.
