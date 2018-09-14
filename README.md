@@ -11,7 +11,13 @@ For thet start I've uploaded three commands:
 - cpr_sex_function.R
 - date_convert_function.R
 - dob_extract_cpr_function.R
-- hwe_fun.R
--- This is actually the function I am most proud of, as it represents an actual universal test.
+
 
 All of these commands are written to work with the Danish Central Person Registry (CPR) numbers of the format ddmmyy-xxxx.
+
+# Further research
+
+In need of a suitable function to perform the chi-squared test of Hardy-Weinberg-equillibrium in my study poppulation, I ended up writing my own. It also contains a few summarise functions. This is actually the function I am most proud of, as it represents an actual universal test for both bi- and triallelic sustems in non-sexcromosome genes.
+
+- hwe_fun.R
+
