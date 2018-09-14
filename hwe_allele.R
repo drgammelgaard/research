@@ -1,4 +1,4 @@
-hwe_fun<-function(x,y)
+hwe_allele<-function(x,y)
 {
 ## Witten by Andreas Gammelgaard Damsbo, agdamsbo@pm.me, based on a non-working
 ## applet at from http://www.husdyr.kvl.dk/htm/kc/popgen/genetik/applets/kitest.htm
