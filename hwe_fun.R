@@ -119,9 +119,10 @@ hwe_fun<-function(x,y)
   
   int<-ifelse(p_v<=0.05,"The null-hypothesis of difference from the HWE can be confirmed","The null-hypothesis of difference from the HWE can be rejected")
   
-  text<-"Chi-square test for Hardy-Weinberg equillibrium for a bi- or triallellic system as an alternative to the applet from www.husdyr.kvl.dk, and based on the theory chapter on http://www.husdyr.kvl.dk/htm/kc/popgen/genetics/2/2.htm"
+  t1<-"Chi-square test for Hardy-Weinberg equillibrium for a bi- or triallellic system as an alternative to the applet from www.husdyr.kvl.dk, and based on the theory chapter on http://www.husdyr.kvl.dk/htm/kc/popgen/genetics/2/2.htm"
+  t2<-"HURRA"
   
-  list<-list(info=text,n.total=b,allele.dist=al_dist,observed.dist=snp_obs,expected.dist=snp_exp,chi.value=chi,p.value=p_v,df=df,interpretation=int)
+  list<-list(info=t1,n.total=b,allele.dist=al_dist,observed.dist=snp_obs,expected.dist=snp_exp,chi.value=chi,p.value=p_v,df=df,interpretation=int,hurra=t2)
   
   return(list)
 }
