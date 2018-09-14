@@ -1,4 +1,4 @@
-hwe_geno<-function(mm,mn,nn,mo,no,oo,alleles=2)
+hwe_geno_p<-function(mm,mn,nn,mo,no,oo,alleles=2)
 {
   ## x is the number of common homozygote, y the heterozygote and z the rare homozygote.
   
