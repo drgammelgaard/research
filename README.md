@@ -1,4 +1,4 @@
-# research-year
+# Research year
 
 Hello world!
 This is my first attempt at creating something usefull for openly sharing. In my work as a research year student through Aarhus University, Denmark at Aarhus University Hospital, Denmark, I've been introduced to working in the programming language R.
