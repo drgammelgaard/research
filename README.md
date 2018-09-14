@@ -11,5 +11,7 @@ For thet start I've uploaded three commands:
 - cpr_sex_function.R
 - date_convert_function.R
 - dob_extract_cpr_function.R
+- hwe_fun.R
+-- This is actually the function I am most proud of, as it represents an actual universal test.
 
 All of these commands are written to work with the Danish Central Person Registry (CPR) numbers of the format ddmmyy-xxxx.
