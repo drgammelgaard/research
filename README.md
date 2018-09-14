@@ -20,4 +20,5 @@ All of these commands are written to work with the Danish Central Person Registr
 In need of a suitable function to perform the chi-squared test of Hardy-Weinberg-equillibrium in my study poppulation, I ended up writing my own. It also contains a few summarise functions. This is actually the function I am most proud of, as it represents an actual universal test for both bi- and triallelic sustems in non-sexcromosome genes.
 
 - hwe_allele.R -- requires input in the form of two vectors with alleles listed
+- hwe_geno.R -- requires input as numbers of each genotype (mm, mn, nn for biallelic systems and mm, mn, nn, mo, no, oo for triallelic)
 
