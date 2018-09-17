@@ -28,10 +28,7 @@ hwe_allele<-function(x,y)
     p_q<-round(2*p*q*b,3)
     q_q<-round(q^2*b,3)
     
-    obs=summary(snp_f)
-    exp=rbind(p_p, p_q, q_q)
-    
-    hwe<-data.frame(obs,exp)
+    hwe<-data.frame(obs=summary(snp_f),exp=rbind(p_p, p_q, q_q))
     
     hwe$dev<-hwe$obs-hwe$exp
     hwe$chi<-hwe$dev^2/hwe$exp
@@ -79,10 +76,7 @@ hwe_allele<-function(x,y)
     q_r<-round(2*q*r*b,3)
     r_r<-round(r^2*b,3)
     
-    obs=summary(snp_f)
-    exp=rbind(p_p, p_q, q_q,p_r,q_r, r_r)
-    
-    hwe<-data.frame(obs,exp)
+    hwe<-data.frame(obs=summary(snp_f),exp=rbind(p_p, p_q, q_q))
     
     hwe$dev<-hwe$obs-hwe$exp
     hwe$chi<-hwe$dev^2/hwe$exp
