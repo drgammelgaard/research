@@ -3,11 +3,7 @@ hwe_allele<-function(x,y)
 ## Witten by Andreas Gammelgaard Damsbo, agdamsbo@pm.me, based on a non-working
 ## applet at from http://www.husdyr.kvl.dk/htm/kc/popgen/genetik/applets/kitest.htm
   
-  all<-length(levels(factor(x)))
-  
-  if(length(levels(factor(x)))!=length(levels(factor(y)))){
-    stop("Number of alleles are not the same in two vectors")
-  }
+  all<-pmax(length(levels(factor(x))),length(levels(factor(y))))
   
   if(all==2){
     df=1
