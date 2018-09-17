@@ -110,7 +110,9 @@ hwe_allele<-function(x,y)
     p_v<-pchisq(chi, df=df, lower.tail=FALSE)
     
   }
-  else {stop("This formula only works for bi- or triallellic systems")}
+  else if (all==4){stop("This formula only works for bi- or triallellic systems")}
+    
+  else {stop("There was an unknown error")}
   
   colnames(al_dist)<-al_names
   colnames(snp_obs)<-gen_names
