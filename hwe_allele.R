@@ -40,11 +40,9 @@ hwe_allele<-function(x,y)
     gen_names<-c(
       paste(levels(factor(x))[1],levels(factor(x))[1],sep="_"),
       paste(levels(factor(x))[1],levels(factor(x))[2],sep="_"),
-      paste(levels(factor(x))[2],levels(factor(x))[2],sep="_")
-    )
+      paste(levels(factor(x))[2],levels(factor(x))[2],sep="_"))
     
     chi<-sum(hwe$chi,na.rm = TRUE)
-    
     p_v<-pchisq(chi, df=df, lower.tail=FALSE)
   }
   else if(all==3){
@@ -76,7 +74,7 @@ hwe_allele<-function(x,y)
     q_r<-round(2*q*r*b,3)
     r_r<-round(r^2*b,3)
     
-    hwe<-data.frame(obs=summary(snp_f),exp=rbind(p_p, p_q, q_q))
+    hwe<-data.frame(obs=summary(snp_f),exp=rbind(p_p, p_q, q_q, p_r, q_r, r_r))
     
     hwe$dev<-hwe$obs-hwe$exp
     hwe$chi<-hwe$dev^2/hwe$exp
@@ -91,12 +89,9 @@ hwe_allele<-function(x,y)
       paste(levels(factor(x))[2],levels(factor(x))[2],sep="_"),
       paste(levels(factor(x))[1],levels(factor(x))[3],sep="_"),
       paste(levels(factor(x))[2],levels(factor(x))[3],sep="_"),
-      paste(levels(factor(x))[3],levels(factor(x))[3],sep="_")
-    )
-    
+      paste(levels(factor(x))[3],levels(factor(x))[3],sep="_"))
     
     chi<-sum(hwe$chi,na.rm = TRUE)
-    
     p_v<-pchisq(chi, df=df, lower.tail=FALSE)
     
   }
