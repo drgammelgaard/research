@@ -7,11 +7,11 @@ col_fact<-function(string,data){
   n<-c()
   
   for(i in 1:length(s)){
-  n<-c(n,names(select(d,contains(s[i])))
-  
+  n<-c(n,names(select(d,contains(s[i]))))
+  }
   
   for(i in 1:length(n)) {
     d[,n[i]]<-factor(d[,n[i]])
-  }}
+  }
   return(d)
 }
