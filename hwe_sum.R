@@ -1,9 +1,10 @@
-hwe_sum<-function(x,f){
+hwe_sum<-function(a1,a2,f){
 ## HWE summarising function, for several groups defined by factor f
 
 source("https://raw.githubusercontent.com/agdamsbo/research/master/hwe_allele.R")
 lst<-list()
-  for (i in 1:length(ls<-split(x,f))){
+df<-data.frame(cbind(a1,a2))
+  for (i in 1:length(ls<-split(df,f))){
   
   grp<-names(ls)[i]
   
