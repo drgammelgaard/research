@@ -1,3 +1,7 @@
+# Intro
+
+I try my best to share my basic workarounds in R to more effectively do statistical research. Feel free to be inspired or comment.
+
 # Research year
 
 Hello world!
@@ -21,4 +25,9 @@ In need of a suitable function to perform the chi-squared test of Hardy-Weinberg
 
 - hwe_allele.R -- requires input in the form of two vectors with alleles listed
 - hwe_geno.R -- requires input as numbers of each genotype (mm, mn, nn for biallelic systems and mm, mn, nn, mo, no, oo for triallelic)
+- hwe.sum.R
+
+- col_fact.R
+- col_num.R
+
 
