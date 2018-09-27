@@ -10,6 +10,8 @@ rep_glm<-function(x,y){
      b<-round(coef(m)[-1],3)
      
      pv<-round(tidy(m)$p.value[-1],3)
+    pv<-ifelse(pv<0.001,"<0.001",pv)
+    pv <- ifelse(pv<=0.05|pv=="<0.001",paste0("*",pv),pv)
      
      pred<-names(x)[i]
      
