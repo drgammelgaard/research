@@ -29,5 +29,6 @@ In need of a suitable function to perform the chi-squared test of Hardy-Weinberg
 
 - col_fact.R
 - col_num.R
+- rep_glm.R
 
 
