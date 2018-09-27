@@ -14,6 +14,7 @@ rep_glm<-function(x,y){
      pv<-round(tidy(m)$p.value[-1],3)
      pv<-ifelse(pv<0.001,"<0.001",pv)
      pv <- ifelse(pv<=0.05|pv=="<0.001",paste0("*",pv),pv)
+    pv <- ifelse(pv>0.05&pv<=0.1,paste0(".",pv),pv)
      
      if (is.factor(v)){
        pred<-paste(names(x)[i],levels(v)[-1],sep = "_")}
