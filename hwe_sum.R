@@ -1,5 +1,5 @@
 hwe_sum<-function(a1,a2,f){
-## HWE summarising function, for several groups defined by factor f
+## HWE summarising function, for several groups defined by factor f. Alleles are provided as vectors, a1 and a2.
 
 source("https://raw.githubusercontent.com/agdamsbo/research/master/hwe_allele.R")
 lst<-list()
