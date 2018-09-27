@@ -11,11 +11,11 @@ col_fact<-function(string,data,levels=NULL,labels=NULL){
   n<-c(n,names(select(d,contains(s[i]))))
   }
 
-  if (!is.null(levels){
+  if (!is.null(levels)){
     for(i in 1:length(n)) {
     d[,n[i]]<-factor(d[,n[i]],levels=levels)}}
     
-    if (!is.null(labels){ 
+    if (!is.null(labels)){ 
       for(i in 1:length(n)) {
         d[,n[i]]<-factor(d[,n[i]],labels=labels)
   }}
