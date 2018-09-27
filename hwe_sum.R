@@ -18,5 +18,5 @@ lst<-list()
   lst<-list(lst,grp,obs.dist=obs,print=prnt,hwe.pv=pval)
   }
   
-print(lst)
+return(lst)
 }
