@@ -3,7 +3,7 @@ col_fact<-function(string,data){
 
   require(dplyr)
   d<-data
-  n<-names(select(d,starts_with(string)))
+  n<-names(select(d,contains(string)))
   
   for(i in 1:length(n)) {
     d[,n[i]]<-factor(d[,n[i]])
